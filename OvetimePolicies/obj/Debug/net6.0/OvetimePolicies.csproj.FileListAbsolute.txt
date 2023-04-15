@@ -1,0 +1,12 @@
+E:\OvetimePolicies\OvetimePolicies\OvetimePolicies\bin\Debug\net6.0\OvetimePolicies.deps.json
+E:\OvetimePolicies\OvetimePolicies\OvetimePolicies\bin\Debug\net6.0\OvetimePolicies.dll
+E:\OvetimePolicies\OvetimePolicies\OvetimePolicies\bin\Debug\net6.0\OvetimePolicies.pdb
+E:\OvetimePolicies\OvetimePolicies\OvetimePolicies\obj\Debug\net6.0\OvetimePolicies.csproj.AssemblyReference.cache
+E:\OvetimePolicies\OvetimePolicies\OvetimePolicies\obj\Debug\net6.0\OvetimePolicies.GeneratedMSBuildEditorConfig.editorconfig
+E:\OvetimePolicies\OvetimePolicies\OvetimePolicies\obj\Debug\net6.0\OvetimePolicies.AssemblyInfoInputs.cache
+E:\OvetimePolicies\OvetimePolicies\OvetimePolicies\obj\Debug\net6.0\OvetimePolicies.AssemblyInfo.cs
+E:\OvetimePolicies\OvetimePolicies\OvetimePolicies\obj\Debug\net6.0\OvetimePolicies.csproj.CoreCompileInputs.cache
+E:\OvetimePolicies\OvetimePolicies\OvetimePolicies\obj\Debug\net6.0\OvetimePolicies.dll
+E:\OvetimePolicies\OvetimePolicies\OvetimePolicies\obj\Debug\net6.0\refint\OvetimePolicies.dll
+E:\OvetimePolicies\OvetimePolicies\OvetimePolicies\obj\Debug\net6.0\OvetimePolicies.pdb
+E:\OvetimePolicies\OvetimePolicies\OvetimePolicies\obj\Debug\net6.0\ref\OvetimePolicies.dll
