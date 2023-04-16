@@ -10,7 +10,7 @@ using InformationPersonel.Models;
 
 namespace InformationPersonel.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("mysite.com/[controller]/action/")]
     [ApiController]
     public class PersonController : ControllerBase
     {
@@ -21,7 +21,7 @@ namespace InformationPersonel.Controllers
             _context = context;
         }
 
-        // GET: api/Person
+  
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Person>>> GetPersons()
         {
@@ -32,7 +32,6 @@ namespace InformationPersonel.Controllers
             return await _context.Persons.ToListAsync();
         }
 
-        // GET: api/Person/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Person>> GetPerson(int id)
         {
@@ -50,8 +49,7 @@ namespace InformationPersonel.Controllers
             return person;
         }
 
-        // PUT: api/Person/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+
         [HttpPut("{id}")]
         public async Task<IActionResult> PutPerson(int id, Person person)
         {
@@ -81,8 +79,7 @@ namespace InformationPersonel.Controllers
             return NoContent();
         }
 
-        // POST: api/Person
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+
         [HttpPost]
         public async Task<ActionResult<Person>> PostPerson(Person person)
         {
@@ -96,7 +93,7 @@ namespace InformationPersonel.Controllers
             return CreatedAtAction("GetPerson", new { id = person.Id }, person);
         }
 
-        // DELETE: api/Person/5
+     
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeletePerson(int id)
         {
