@@ -4,7 +4,7 @@ services:
     container_name: calculate
     environment:
       ACCEPT_EULA: "Y"
-      SA_PASSWORD: Admin@@123
+      MSSQL_SA_PASSWORD: Admin@@123
     image: mcr.microsoft.com/mssql/server:2017-latest
     networks:
       default: null

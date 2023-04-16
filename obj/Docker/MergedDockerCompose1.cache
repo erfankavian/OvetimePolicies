@@ -4,8 +4,8 @@ services:
     container_name: calculate
     environment:
       ACCEPT_EULA: "Y"
-      SA_PASSWORD: Admin@@123
-    image: mcr.microsoft.com/mssql/server:2017-latest
+      MSSQL_SA_PASSWORD: Admin@@123
+    image: mcr.microsoft.com/mssql/server:2019-latest
     networks:
       default: null
     ports:
@@ -14,26 +14,6 @@ services:
       published: "1433"
       protocol: tcp
     restart: always
-  informationpersonel:
-    build:
-      context: E:\OvetimePolicies\OvetimePolicies
-      dockerfile: InformationPersonel/Dockerfile
-    depends_on:
-      calculate:
-        condition: service_started
-    environment:
-      ASPNETCORE_ENVIRONMENT: Development
-      ASPNETCORE_URLS: https://+:443;http://+:80
-      ConnectionStrings:ConnectionString: Server=calculate;Database=calculate;User
-        Id=sa;Password=Admin@@123;TrustServerCertificate=true;Integrated Security=false
-    image: informationpersonel
-    networks:
-      default: null
-    ports:
-    - mode: ingress
-      target: 80
-      published: "8004"
-      protocol: tcp
 networks:
   default:
     name: dockercompose7307295167283381826_default

@@ -4,7 +4,7 @@ services:
   calculate:
     container_name: calculate
     environment:
-       SA_PASSWORD: "Admin@@123"
+       MSSQL_SA_PASSWORD: "Admin@@123"
        ACCEPT_EULA: "Y"
     restart: always
     ports:
