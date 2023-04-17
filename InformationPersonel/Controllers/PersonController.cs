@@ -23,7 +23,7 @@ namespace InformationPersonel.Controllers
 
   
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Person>>> GetPersons()
+        public async Task<ActionResult<IEnumerable<Person>>> GetAllPersonsAsync()
         {
           if (_context.Persons == null)
           {
@@ -33,7 +33,7 @@ namespace InformationPersonel.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Person>> GetPerson(int id)
+        public async Task<ActionResult<Person>> GetPersonByIdAsync(int id)
         {
           if (_context.Persons == null)
           {
@@ -51,7 +51,7 @@ namespace InformationPersonel.Controllers
 
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutPerson(int id, Person person)
+        public async Task<IActionResult> PutPersonAsync(int id, Person person)
         {
             if (id != person.Id)
             {
@@ -81,7 +81,7 @@ namespace InformationPersonel.Controllers
 
 
         [HttpPost]
-        public async Task<ActionResult<Person>> PostPerson(Person person)
+        public async Task<ActionResult<Person>> PostPersonAsync(Person person)
         {
           if (_context.Persons == null)
           {
@@ -95,7 +95,7 @@ namespace InformationPersonel.Controllers
 
      
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeletePerson(int id)
+        public async Task<IActionResult> DeletePersonAsync(int id)
         {
             if (_context.Persons == null)
             {
